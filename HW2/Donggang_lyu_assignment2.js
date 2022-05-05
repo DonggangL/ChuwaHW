@@ -18,13 +18,18 @@ let sum = 0;
 sum = itemObject.reduce(function (accumulator, cuurentV) {
   return accumulator + cuurentV.quantity * cuurentV.price;
 }, initialValue);
-console.log(sum);
+// console.log(sum);
 // itemObject.map(function(element, array) {
 //     sum = sum + element.price * element.quantity;
 //   if (element.quantity > 2 && element.price > 300) {
 //       array1.push(element);
 //   }
 // });
+itemObject.map((element) => {
+  element.quantity *= 2;
+  element.price *= 2;
+});
+console.log(itemObject);
 
 // console.log("Double the quantity and price is ");
 // console.log(array);
@@ -41,4 +46,4 @@ const lowercase = spaceRemove.toLowerCase();
 const removeAlphabet = lowercase.replace(/[^a-z0-9 ]/gi, ' ');
 // console.log(removeAlphabet);
 const result = string.replace(/[^a-z0-9 ]/gi, ' ').replace(/\s+/g, ' ').toLowerCase().trim();
-console.log(result);
+// console.log(result);
