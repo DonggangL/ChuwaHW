@@ -25,6 +25,7 @@ for (let i = 0; i< tableContent.length; i++) {
     let tdL2 = document.createElement('td');
     let tdL3 = document.createElement('td');
     let tdL4 = document.createElement('td');
+    //maps 
     tdL1.textContent = tableContent[i]["Student Name"];
     tdL2.textContent = tableContent[i].Age;
     tdL3.textContent = tableContent[i].Phone;
@@ -51,7 +52,15 @@ function makeUl() {
     }
     return list;
 };
-makeUl();
+let array = ['HTML', 'JavaScript', 'CSS', 'React', 'Java'];
+let list = document.getElementById('foo');
+array.forEach(function (ele)  {
+  let item = document.createElement('li');
+  item.appendChild(document.createTextNode(ele));
+  list.appendChild(item);
+});
+//foreach and maps
+
 
 function makeOl () {
     let list = document.getElementById('sortedList');
