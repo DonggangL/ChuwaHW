@@ -60,7 +60,12 @@ array.forEach(function (ele)  {
   list.appendChild(item);
 });
 //foreach and maps
-
+let mapList = document.getElementById('mapList');
+array.map(function (ele) {
+    let item = document.createElement('li');
+    item.appendChild(document.createTextNode(ele));
+    mapList.appendChild(item);
+});
 
 function makeOl () {
     let list = document.getElementById('sortedList');
