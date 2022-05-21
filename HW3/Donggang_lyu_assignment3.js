@@ -34,6 +34,7 @@ for (let i = 0; i< tableContent.length; i++) {
     list.appendChild(tdL2);
     list.appendChild(tdL3);
     list.appendChild(tdL4);
+
     listZ.appendChild(list);
 }
 return listZ;
